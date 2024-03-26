@@ -5,3 +5,5 @@ images/
 *.vsidx
 .env
 StockWizImgAPI.csproj.user
+StockWizImgAPI.csproj
+/Properties/PublishProfiles
