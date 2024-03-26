@@ -1,0 +1,7 @@
+﻿.vs/
+bin/
+obj/
+images/
+*.vsidx
+.env
+StockWizImgAPI.csproj.user
