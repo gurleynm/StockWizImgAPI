@@ -16,7 +16,10 @@ namespace StockWizImgAPI.Controllers
         [HttpGet(Name = "GetImage")]
         public IActionResult Get(string ticker)
         {
-            Byte[] b = System.IO.File.ReadAllBytes(ticker+".jpg");   // You can use your own method over here.         
+            var file = System.IO.File.ReadAllLines(".env");
+            string url = file[0] + ticker + ".png";
+
+            Byte[] b = System.IO.File.ReadAllBytes(url);         
             return File(b, "image/jpeg");
         }
     }
